@@ -47,5 +47,9 @@ This project aims to be readable, reusable, and reproducible literate documents 
         assert the.map(lambda x: x.__complete__ is True).all()(modules)
         assert the.map(x.__file__).map(the.str.endswith('.ipynb')).all()(modules)
                 
-    assert not getattr(__name__ == '__main__' and unittest(testTheModules), 'errors', None), """The tests were run and did not pass""" 
+    assert not getattr(__name__ == '__main__' and unittest(testTheModules), 'errors', None) , """The tests were run and did not pass""" 
+    print("""🏆🏆🏆""")
+
+
+    🏆🏆🏆
 

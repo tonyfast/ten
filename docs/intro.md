@@ -337,7 +337,7 @@
 
 > __Disclaimer__: This presentation is very dense.  The resources below allow the audience to explore this talk after we meet.  It is full of great resources for students and teachers using computers as research equipment.  
     
-### [Github](hsttps://github.com/tonyfast/ten) | [NBViewer](http://nbviewer.jupyter.org/urls/github.com/tonyfast/ten/intro.ipynb) | [Pages](https://tonyfast.github.io/ten)
+### [Github](hsttps://github.com/tonyfast/ten) | [NBViewer](http://nbviewer.jupyter.org/github/tonyfast/ten/blob/master/ten/intro.ipynb) | [Pages](https://tonyfast.github.io/ten)
 
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/tonyfast/ten/master?filepath=readme.ipynb)
 [![Gitter](https://badges.gitter.im/tonyfast/ten.png)](https://gitter.im/tonyfast-ten)

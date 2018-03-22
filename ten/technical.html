@@ -12356,7 +12356,6 @@ On instance[&#39;cells&#39;]:
         <span class="o">.</span><span class="n">map</span><span class="p">(</span><span class="n">λ</span><span class="p">[</span><span class="n">the</span><span class="o">.</span><span class="n">identity</span><span class="p">(),</span> <span class="n">the</span><span class="o">.</span><span class="n">Path</span><span class="o">.</span><span class="n">read_text</span><span class="p">()</span><span class="o">.</span><span class="n">json</span><span class="o">.</span><span class="n">loads</span><span class="p">()</span><span class="o">.</span><span class="n">get</span><span class="p">(</span><span class="s1">&#39;cells&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">pandas</span><span class="o">.</span><span class="n">DataFrame</span><span class="p">()])</span>
         <span class="o">.</span><span class="n">dict</span><span class="p">()</span><span class="o">.</span><span class="n">pandas</span><span class="o">.</span><span class="n">concat</span><span class="p">()</span>
     <span class="p">)(</span><span class="s1">&#39;.&#39;</span><span class="p">)</span>
-    <span class="n">thisPresentation</span>
 </pre></div>
 
 </div>
@@ -12380,546 +12379,8 @@ On instance[&#39;cells&#39;]:
     .filter(the.str().contains('checkpoint').not_())
     .map(λ[the.identity(), the.Path.read_text().json.loads().get('cells').pandas.DataFrame()])
     .dict().pandas.concat()
-)('.')
-thisPresentation</code></pre>
+)('.')</code></pre>
 
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[9]:</div>
-
-
-
-<div class="output_html rendered_html output_subarea output_execute_result">
-<div>
-<style>
-    .dataframe thead tr:only-child th {
-        text-align: right;
-    }
-
-    .dataframe thead th {
-        text-align: left;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-</style>
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th></th>
-      <th>cell_type</th>
-      <th>execution_count</th>
-      <th>metadata</th>
-      <th>outputs</th>
-      <th>source</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th rowspan="30" valign="top">collaboration.ipynb</th>
-      <th>0</th>
-      <td>markdown</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>NaN</td>
-      <td>[⓷ `collaboration.ipynb`]</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>code</td>
-      <td>1.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/html': ['&lt;style&gt;\n', '.jp-Ren...</td>
-      <td>[    \n,     o = __name__ == '__main__'\n,    ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>code</td>
-      <td>38.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[\n,     try: \n,         from .particles impo...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>code</td>
-      <td>43.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, # The Modern Scientist\n, \n,...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>code</td>
-      <td>44.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['# Jupyter for sh...</td>
-      <td>[# Jupyter for sharing and collaboration\n, \n...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>code</td>
-      <td>45.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, # {{topics[8]}}\n,     \n,   ...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>code</td>
-      <td>46.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    digraph{rank...</td>
-      <td>[    digraph{rankdir="LR";subgraph clusters{la...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>code</td>
-      <td>61.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, \n, ## Jupyter for Publishing...</td>
-    </tr>
-    <tr>
-      <th>8</th>
-      <td>code</td>
-      <td>49.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n,     \n, ## Jupyter for Teaching]</td>
-    </tr>
-    <tr>
-      <th>9</th>
-      <td>code</td>
-      <td>9.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['# At Georgia Tec...</td>
-      <td>[# At Georgia Tech\n, \n, * https://github.com...</td>
-    </tr>
-    <tr>
-      <th>10</th>
-      <td>code</td>
-      <td>64.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    https://open...</td>
-      <td>[    https://openedx.seas.gwu.edu/courses/cour...</td>
-    </tr>
-    <tr>
-      <th>11</th>
-      <td>code</td>
-      <td>65.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    http://loren...</td>
-      <td>[    http://lorenabarba.com/]</td>
-    </tr>
-    <tr>
-      <th>12</th>
-      <td>code</td>
-      <td>11.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ["# [nbgrader](tea...</td>
-      <td>[# [nbgrader](teaching.nbgrader['embed'])\n, \...</td>
-    </tr>
-    <tr>
-      <th>13</th>
-      <td>code</td>
-      <td>12.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    http://data8...</td>
-      <td>[    {{teaching.bids['class']}}\n,     \n, # [...</td>
-    </tr>
-    <tr>
-      <th>14</th>
-      <td>code</td>
-      <td>67.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['&lt;blockquote clas...</td>
-      <td>[&lt;blockquote class="twitter-tweet" data-lang="...</td>
-    </tr>
-    <tr>
-      <th>15</th>
-      <td>code</td>
-      <td>68.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, ## Jupyter for profit\n, \n, ...</td>
-    </tr>
-    <tr>
-      <th>16</th>
-      <td>code</td>
-      <td>15.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, \n, ## Jupyter for Books]</td>
-    </tr>
-    <tr>
-      <th>17</th>
-      <td>code</td>
-      <td>16.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['# Rabst'], 'text...</td>
-      <td>[# Rabst]</td>
-    </tr>
-    <tr>
-      <th>18</th>
-      <td>code</td>
-      <td>17.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['# [Python Machin...</td>
-      <td>[# [Python Machine Learning (2nd edition)](htt...</td>
-    </tr>
-    <tr>
-      <th>19</th>
-      <td>code</td>
-      <td>18.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['# [Introduction ...</td>
-      <td>[# [Introduction to Artificial Neural Networks...</td>
-    </tr>
-    <tr>
-      <th>20</th>
-      <td>code</td>
-      <td>19.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['# Jake VanderPla...</td>
-      <td>[# Jake VanderPlas]</td>
-    </tr>
-    <tr>
-      <th>21</th>
-      <td>code</td>
-      <td>20.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['## [Python Data ...</td>
-      <td>[## [Python Data Science Handbook]({{publishin...</td>
-    </tr>
-    <tr>
-      <th>22</th>
-      <td>code</td>
-      <td>21.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ["# Immersive on d...</td>
-      <td>[# Immersive on demand notebooks with [O'Reill...</td>
-    </tr>
-    <tr>
-      <th>23</th>
-      <td>code</td>
-      <td>22.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, # {{topics[9]}}]</td>
-    </tr>
-    <tr>
-      <th>24</th>
-      <td>code</td>
-      <td>23.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    {{ligo_tutorial}}\n,     \n,     \n, ##  ...</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>code</td>
-      <td>24.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    https://mybi...</td>
-      <td>[    https://mybinder.org]</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>code</td>
-      <td>51.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    http://jupyt...</td>
-      <td>[    http://jupyterhub.readthedocs.io/en/latest/]</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>code</td>
-      <td>52.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    http://zero-...</td>
-      <td>[    http://zero-to-jupyterhub.readthedocs.io/]</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>code</td>
-      <td>54.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['[![](https://ima...</td>
-      <td>[[![](https://image.slidesharecdn.com/xheoqqbx...</td>
-    </tr>
-    <tr>
-      <th>29</th>
-      <td>code</td>
-      <td>28.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    https://www....</td>
-      <td>[    https://www.chanzuckerberg.com/science/pr...</td>
-    </tr>
-    <tr>
-      <th>...</th>
-      <th>...</th>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-      <td>...</td>
-    </tr>
-    <tr>
-      <th rowspan="5" valign="top">technical.ipynb</th>
-      <th>24</th>
-      <td>code</td>
-      <td>21.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    https://blog...</td>
-      <td>[    https://blog.github.com/2015-05-07-github...</td>
-    </tr>
-    <tr>
-      <th>25</th>
-      <td>code</td>
-      <td>86.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    https://getn...</td>
-      <td>[    https://getnikola.com/blog/\n, \n, ### Bl...</td>
-    </tr>
-    <tr>
-      <th>26</th>
-      <td>code</td>
-      <td>87.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>
-      <td>[{{Ⅎill}}\n, \n, # Jupyter's Technical Value\n...</td>
-    </tr>
-    <tr>
-      <th>27</th>
-      <td>code</td>
-      <td>23.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['## 🤛[The History...</td>
-      <td>[## 🤛[The History and Community.](history.ipyn...</td>
-    </tr>
-    <tr>
-      <th>28</th>
-      <td>code</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[]</td>
-    </tr>
-    <tr>
-      <th rowspan="8" valign="top">utils/badges.ipynb</th>
-      <th>0</th>
-      <td>code</td>
-      <td>1.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    __file__ = globals().get('__file__', 'bad...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>code</td>
-      <td>2.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    @dataclass\n,     class Github:\n,       ...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>code</td>
-      <td>8.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    @dataclass\n,     class Person(Github):\n...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>code</td>
-      <td>9.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    @dataclass\n,     class Project(Github):\...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>code</td>
-      <td>10.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ["# [jupyter/noteb...</td>
-      <td>[    __name__ == '__main__' and Project(github...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>code</td>
-      <td>11.0</td>
-      <td>{}</td>
-      <td>[{'name': 'stdout', 'output_type': 'stream', '...</td>
-      <td>[    if __name__ == "__main__":\n,         __i...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>code</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[]</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>code</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[]</td>
-    </tr>
-    <tr>
-      <th rowspan="8" valign="top">utils/search.ipynb</th>
-      <th>0</th>
-      <td>markdown</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>NaN</td>
-      <td>[    https://github.com/conda-forge/feather-fo...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>code</td>
-      <td>1.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    o = __name__ == '__main__'\n,     __file_...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>code</td>
-      <td>2.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    from feather...</td>
-      <td>[    from feather import write_dataframe, read...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>code</td>
-      <td>3.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    from inspect...</td>
-      <td>[    from inspect import signature]</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>code</td>
-      <td>4.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['The search tool ...</td>
-      <td>[The search tool will help in sorting through ...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>code</td>
-      <td>5.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    %rm ten.book...</td>
-      <td>[#     %rm ten.book.feather\n,     \n,     @da...</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>code</td>
-      <td>6.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    book = Book(...</td>
-      <td>[    book = Book()\n, \n,     book["Materials ...</td>
-    </tr>
-    <tr>
-      <th>7</th>
-      <td>code</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    ]</td>
-    </tr>
-    <tr>
-      <th rowspan="7" valign="top">utils/style.ipynb</th>
-      <th>0</th>
-      <td>code</td>
-      <td>1.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    style = __import__('IPython').display.HTM...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>code</td>
-      <td>2.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    style.data += """&lt;style&gt;\n,     .jp-mod-p...</td>
-    </tr>
-    <tr>
-      <th>2</th>
-      <td>code</td>
-      <td>18.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    style.data+="""&lt;style&gt;\n,     .jp-mod-pre...</td>
-    </tr>
-    <tr>
-      <th>3</th>
-      <td>code</td>
-      <td>19.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    style.data += """&lt;style&gt;\n,     .jp-mod-p...</td>
-    </tr>
-    <tr>
-      <th>4</th>
-      <td>code</td>
-      <td>28.0</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[    style.data += """&lt;style&gt;\n,     .jp-mod-p...</td>
-    </tr>
-    <tr>
-      <th>5</th>
-      <td>code</td>
-      <td>29.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/html': ['&lt;style&gt;\n', '.jp-Ren...</td>
-      <td>[    style]</td>
-    </tr>
-    <tr>
-      <th>6</th>
-      <td>code</td>
-      <td>NaN</td>
-      <td>{}</td>
-      <td>[]</td>
-      <td>[]</td>
-    </tr>
-    <tr>
-      <th rowspan="2" valign="top">utils/unittest.ipynb</th>
-      <th>0</th>
-      <td>code</td>
-      <td>11.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ["    if __name__ ...</td>
-      <td>[    if __name__ == '__main__':\n,         %re...</td>
-    </tr>
-    <tr>
-      <th>1</th>
-      <td>code</td>
-      <td>12.0</td>
-      <td>{}</td>
-      <td>[{'data': {'text/markdown': ['    def unittest...</td>
-      <td>[    def unittest(*tuple):\n,         """Unitt...</td>
-    </tr>
-  </tbody>
-</table>
-<p>297 rows × 5 columns</p>
-</div>
 </div>
 
 </div>
@@ -12930,7 +12391,39 @@ thisPresentation</code></pre>
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[10]:</div>
+<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="inner_cell">
+    <div class="input_area">
+<div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="s1">&#39;&#39;</span><span class="o">.</span><span class="n">join</span><span class="p">(</span><span class="n">thisPresentation</span><span class="o">.</span><span class="n">_repr_html_</span><span class="p">()</span><span class="o">.</span><span class="n">replace</span><span class="p">(</span><span class="s1">&#39;{{&#39;</span><span class="p">,</span> <span class="s1">&#39;{.{&#39;</span><span class="p">)</span><span class="o">.</span><span class="n">splitlines</span><span class="p">())}}</span>
+</pre></div>
+
+</div>
+</div>
+</div>
+
+<div class="output_wrapper">
+<div class="output">
+
+
+<div class="output_area">
+
+<div class="prompt"></div>
+
+
+
+<div class="output_markdown rendered_html output_subarea ">
+<div><style>    .dataframe thead tr:only-child th {        text-align: right;    }    .dataframe thead th {        text-align: left;    }    .dataframe tbody tr th {        vertical-align: top;    }</style><table border="1" class="dataframe">  <thead>    <tr style="text-align: right;">      <th></th>      <th></th>      <th>cell_type</th>      <th>execution_count</th>      <th>metadata</th>      <th>outputs</th>      <th>source</th>    </tr>  </thead>  <tbody>    <tr>      <th rowspan="30" valign="top">collaboration.ipynb</th>      <th>0</th>      <td>markdown</td>      <td>NaN</td>      <td>{}</td>      <td>NaN</td>      <td>[⓷ `collaboration.ipynb`]</td>    </tr>    <tr>      <th>1</th>      <td>code</td>      <td>1.0</td>      <td>{}</td>      <td>[{'data': {'text/html': ['&lt;style&gt;\n', '.jp-Ren...</td>      <td>[    \n,     o = __name__ == '__main__'\n,    ...</td>    </tr>    <tr>      <th>2</th>      <td>code</td>      <td>2.0</td>      <td>{}</td>      <td>[]</td>      <td>[\n,     try: \n,         from .particles impo...</td>    </tr>    <tr>      <th>3</th>      <td>code</td>      <td>3.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, # The Modern Scientist\n, \n,...</td>    </tr>    <tr>      <th>4</th>      <td>code</td>      <td>4.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['# Jupyter for sh...</td>      <td>[# Jupyter for sharing and collaboration\n, \n...</td>    </tr>    <tr>      <th>5</th>      <td>code</td>      <td>5.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, # {.{topics[8]}}\n,     \n,   ...</td>    </tr>    <tr>      <th>6</th>      <td>code</td>      <td>6.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    digraph{rank...</td>      <td>[    digraph{rankdir="LR";subgraph clusters{la...</td>    </tr>    <tr>      <th>7</th>      <td>code</td>      <td>7.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, \n, ## Jupyter for Publishing...</td>    </tr>    <tr>      <th>8</th>      <td>code</td>      <td>8.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n,     \n, ## Jupyter for Teaching]</td>    </tr>    <tr>      <th>9</th>      <td>code</td>      <td>9.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['# At Georgia Tec...</td>      <td>[# At Georgia Tech\n, \n, * https://github.com...</td>    </tr>    <tr>      <th>10</th>      <td>code</td>      <td>10.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    http://loren...</td>      <td>[    http://lorenabarba.com/tag/open-edx/]</td>    </tr>    <tr>      <th>11</th>      <td>code</td>      <td>11.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ["# [nbgrader](tea...</td>      <td>[# [nbgrader](teaching.nbgrader['embed'])\n, \...</td>    </tr>    <tr>      <th>12</th>      <td>code</td>      <td>12.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    http://data8...</td>      <td>[    {.{teaching.bids['class']}}\n,     \n, # [...</td>    </tr>    <tr>      <th>13</th>      <td>code</td>      <td>13.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['&lt;blockquote clas...</td>      <td>[&lt;blockquote class="twitter-tweet" data-lang="...</td>    </tr>    <tr>      <th>14</th>      <td>code</td>      <td>14.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, ## Jupyter for profit\n, \n, ...</td>    </tr>    <tr>      <th>15</th>      <td>code</td>      <td>15.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, \n, ## Jupyter for Books]</td>    </tr>    <tr>      <th>16</th>      <td>code</td>      <td>37.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['# [Sebastian Ras...</td>      <td>[# {.{people.rasbt}}]</td>    </tr>    <tr>      <th>17</th>      <td>code</td>      <td>17.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['# [Python Machin...</td>      <td>[# [Python Machine Learning (2nd edition)](htt...</td>    </tr>    <tr>      <th>18</th>      <td>code</td>      <td>18.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['# [Introduction ...</td>      <td>[# [Introduction to Artificial Neural Networks...</td>    </tr>    <tr>      <th>19</th>      <td>code</td>      <td>36.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['# [Jake VanderPl...</td>      <td>[# {.{people.jakevdp}}]</td>    </tr>    <tr>      <th>20</th>      <td>code</td>      <td>20.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['## [Python Data ...</td>      <td>[## [Python Data Science Handbook]({.{publishin...</td>    </tr>    <tr>      <th>21</th>      <td>code</td>      <td>21.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ["# Immersive on d...</td>      <td>[# Immersive on demand notebooks with [O'Reill...</td>    </tr>    <tr>      <th>22</th>      <td>code</td>      <td>22.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, # {.{topics[9]}}]</td>    </tr>    <tr>      <th>23</th>      <td>code</td>      <td>23.0</td>      <td>{}</td>      <td>[]</td>      <td>[    {.{ligo_tutorial}}\n,     \n,     \n, ##  ...</td>    </tr>    <tr>      <th>24</th>      <td>code</td>      <td>24.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    https://mybi...</td>      <td>[    https://mybinder.org]</td>    </tr>    <tr>      <th>25</th>      <td>code</td>      <td>25.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    http://jupyt...</td>      <td>[    http://jupyterhub.readthedocs.io/en/latest/]</td>    </tr>    <tr>      <th>26</th>      <td>code</td>      <td>26.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    http://zero-...</td>      <td>[    http://zero-to-jupyterhub.readthedocs.io/]</td>    </tr>    <tr>      <th>27</th>      <td>code</td>      <td>27.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['[![](https://ima...</td>      <td>[[![](https://image.slidesharecdn.com/xheoqqbx...</td>    </tr>    <tr>      <th>28</th>      <td>code</td>      <td>28.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    https://www....</td>      <td>[    https://www.chanzuckerberg.com/wp-content...</td>    </tr>    <tr>      <th>29</th>      <td>code</td>      <td>29.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, # {.{topics[10]}}\n, \n,     d...</td>    </tr>    <tr>      <th>...</th>      <th>...</th>      <td>...</td>      <td>...</td>      <td>...</td>      <td>...</td>      <td>...</td>    </tr>    <tr>      <th rowspan="5" valign="top">technical.ipynb</th>      <th>25</th>      <td>code</td>      <td>24.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    https://blog...</td>      <td>[    https://blog.github.com/2015-05-07-github...</td>    </tr>    <tr>      <th>26</th>      <td>code</td>      <td>25.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    https://getn...</td>      <td>[    https://getnikola.com/blog/\n, \n, ### Bl...</td>    </tr>    <tr>      <th>27</th>      <td>code</td>      <td>26.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['---\n', '---\n',...</td>      <td>[{.{Ⅎill}}\n, \n, # Jupyter's Technical Value\n...</td>    </tr>    <tr>      <th>28</th>      <td>code</td>      <td>27.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['## 🤛[The History...</td>      <td>[## 🤛[The History and Community.](history.ipyn...</td>    </tr>    <tr>      <th>29</th>      <td>code</td>      <td>NaN</td>      <td>{}</td>      <td>[]</td>      <td>[]</td>    </tr>    <tr>      <th rowspan="8" valign="top">utils/badges.ipynb</th>      <th>0</th>      <td>code</td>      <td>1.0</td>      <td>{}</td>      <td>[]</td>      <td>[    __file__ = globals().get('__file__', 'bad...</td>    </tr>    <tr>      <th>1</th>      <td>code</td>      <td>2.0</td>      <td>{}</td>      <td>[]</td>      <td>[    @dataclass\n,     class Github:\n,       ...</td>    </tr>    <tr>      <th>2</th>      <td>code</td>      <td>13.0</td>      <td>{}</td>      <td>[]</td>      <td>[    @dataclass\n,     class Person(Github):\n...</td>    </tr>    <tr>      <th>3</th>      <td>code</td>      <td>9.0</td>      <td>{}</td>      <td>[]</td>      <td>[    @dataclass\n,     class Project(Github):\...</td>    </tr>    <tr>      <th>4</th>      <td>code</td>      <td>10.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ["# [jupyter/noteb...</td>      <td>[    __name__ == '__main__' and Project(github...</td>    </tr>    <tr>      <th>5</th>      <td>code</td>      <td>11.0</td>      <td>{}</td>      <td>[{'name': 'stdout', 'output_type': 'stream', '...</td>      <td>[    if __name__ == "__main__":\n,         __i...</td>    </tr>    <tr>      <th>6</th>      <td>code</td>      <td>NaN</td>      <td>{}</td>      <td>[]</td>      <td>[]</td>    </tr>    <tr>      <th>7</th>      <td>code</td>      <td>NaN</td>      <td>{}</td>      <td>[]</td>      <td>[]</td>    </tr>    <tr>      <th rowspan="8" valign="top">utils/search.ipynb</th>      <th>0</th>      <td>markdown</td>      <td>NaN</td>      <td>{}</td>      <td>NaN</td>      <td>[    https://github.com/conda-forge/feather-fo...</td>    </tr>    <tr>      <th>1</th>      <td>code</td>      <td>1.0</td>      <td>{}</td>      <td>[]</td>      <td>[    o = __name__ == '__main__'\n,     __file_...</td>    </tr>    <tr>      <th>2</th>      <td>code</td>      <td>2.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    from feather...</td>      <td>[    from feather import write_dataframe, read...</td>    </tr>    <tr>      <th>3</th>      <td>code</td>      <td>3.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    from inspect...</td>      <td>[    from inspect import signature]</td>    </tr>    <tr>      <th>4</th>      <td>code</td>      <td>4.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['The search tool ...</td>      <td>[The search tool will help in sorting through ...</td>    </tr>    <tr>      <th>5</th>      <td>code</td>      <td>5.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    %rm ten.book...</td>      <td>[#     %rm ten.book.feather\n,     \n,     @da...</td>    </tr>    <tr>      <th>6</th>      <td>code</td>      <td>6.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    book = Book(...</td>      <td>[    book = Book()\n, \n,     book["Materials ...</td>    </tr>    <tr>      <th>7</th>      <td>code</td>      <td>NaN</td>      <td>{}</td>      <td>[]</td>      <td>[    ]</td>    </tr>    <tr>      <th rowspan="7" valign="top">utils/style.ipynb</th>      <th>0</th>      <td>code</td>      <td>1.0</td>      <td>{}</td>      <td>[]</td>      <td>[    style = __import__('IPython').display.HTM...</td>    </tr>    <tr>      <th>1</th>      <td>code</td>      <td>2.0</td>      <td>{}</td>      <td>[]</td>      <td>[    style.data += """&lt;style&gt;\n,     .jp-mod-p...</td>    </tr>    <tr>      <th>2</th>      <td>code</td>      <td>18.0</td>      <td>{}</td>      <td>[]</td>      <td>[    style.data+="""&lt;style&gt;\n,     .jp-mod-pre...</td>    </tr>    <tr>      <th>3</th>      <td>code</td>      <td>19.0</td>      <td>{}</td>      <td>[]</td>      <td>[    style.data += """&lt;style&gt;\n,     .jp-mod-p...</td>    </tr>    <tr>      <th>4</th>      <td>code</td>      <td>28.0</td>      <td>{}</td>      <td>[]</td>      <td>[    style.data += """&lt;style&gt;\n,     .jp-mod-p...</td>    </tr>    <tr>      <th>5</th>      <td>code</td>      <td>29.0</td>      <td>{}</td>      <td>[{'data': {'text/html': ['&lt;style&gt;\n', '.jp-Ren...</td>      <td>[    style]</td>    </tr>    <tr>      <th>6</th>      <td>code</td>      <td>NaN</td>      <td>{}</td>      <td>[]</td>      <td>[]</td>    </tr>    <tr>      <th rowspan="2" valign="top">utils/unittest.ipynb</th>      <th>0</th>      <td>code</td>      <td>11.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ["    if __name__ ...</td>      <td>[    if __name__ == '__main__':\n,         %re...</td>    </tr>    <tr>      <th>1</th>      <td>code</td>      <td>12.0</td>      <td>{}</td>      <td>[{'data': {'text/markdown': ['    def unittest...</td>      <td>[    def unittest(*tuple):\n,         """Unitt...</td>    </tr>  </tbody></table><p>298 rows × 5 columns</p></div>
+</div>
+
+</div>
+
+</div>
+</div>
+
+</div>
+<div class="cell border-box-sizing code_cell rendered">
+<div class="input">
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="n">Ⅎill</span><span class="p">}}</span>
@@ -12947,54 +12440,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h1 id="Jupyter-is-literate-computing">Jupyter is literate computing<a class="anchor-link" href="#Jupyter-is-literate-computing">&#182;</a></h1><hr>
-<blockquote><h2 id="The-purpose-of-computing-is-insight,-not-numbers.">The purpose of computing is insight, not numbers.<a class="anchor-link" href="#The-purpose-of-computing-is-insight,-not-numbers.">&#182;</a></h2><ul>
-<li>Richard Hamming</li>
-</ul>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[11]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>    <span class="n">graph</span> <span class="p">{</span><span class="n">rankdir</span><span class="o">=</span><span class="s2">&quot;LR&quot;</span><span class="p">;</span> <span class="n">data</span><span class="o">--</span><span class="n">science</span><span class="o">--</span><span class="n">computing</span><span class="o">--</span><span class="n">data</span><span class="p">}</span>
@@ -13009,90 +12458,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-
-<pre><code>graph {rankdir="LR"; data--science--computing--data}
-
-</code></pre>
-<h4 id="&quot;Literate-computing&quot;-and-computational-reproducibility:-IPython-in-the-age-of-data-driven-journalism"><a href="http://blog.fperez.org/2013/04/literate-computing-and-computational.html">"Literate computing" and computational reproducibility: IPython in the age of data-driven journalism</a><a class="anchor-link" href="#&quot;Literate-computing&quot;-and-computational-reproducibility:-IPython-in-the-age-of-data-driven-journalism">&#182;</a></h4><blockquote><p>Our job with Jupyter<del>IPython</del> is to think deeply about questions regarding the intersection of <em><strong>computing, data and science</strong></em>, but it's clear to me at this point that we can contribute in contexts beyond pure scientific research. I hope we'll be able to provide folks who have a <em><strong>direct intersection with the public</strong></em>, such as journalists, with tools that help a more informed and productive debate.</p>
-<ul>
-<li>Fernando Perez</li>
-</ul>
-</blockquote>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
- -->
-<!-- Title: %3 Pages: 1 -->
-<svg width="302pt" height="67pt"
- viewBox="0.00 0.00 302.12 67.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 63)">
-<title>%3</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-63 298.122,-63 298.122,4 -4,4"/>
-<!-- data -->
-<g id="node1" class="node"><title>data</title>
-<ellipse fill="none" stroke="black" cx="27" cy="-18" rx="27" ry="18"/>
-<text text-anchor="middle" x="27" y="-13.8" font-family="Times,serif" font-size="14.00">data</text>
-</g>
-<!-- science -->
-<g id="node2" class="node"><title>science</title>
-<ellipse fill="none" stroke="black" cx="126.128" cy="-41" rx="36.2558" ry="18"/>
-<text text-anchor="middle" x="126.128" y="-36.8" font-family="Times,serif" font-size="14.00">science</text>
-</g>
-<!-- data&#45;&#45;science -->
-<g id="edge1" class="edge"><title>data&#45;&#45;science</title>
-<path fill="none" stroke="black" d="M52.7607,-23.8634C65.0132,-26.7648 79.9513,-30.3022 93.0668,-33.4079"/>
-</g>
-<!-- computing -->
-<g id="node3" class="node"><title>computing</title>
-<ellipse fill="none" stroke="black" cx="246.189" cy="-18" rx="47.8668" ry="18"/>
-<text text-anchor="middle" x="246.189" y="-13.8" font-family="Times,serif" font-size="14.00">computing</text>
-</g>
-<!-- science&#45;&#45;computing -->
-<g id="edge2" class="edge"><title>science&#45;&#45;computing</title>
-<path fill="none" stroke="black" d="M160.014,-34.5932C173.387,-31.988 189.003,-28.9457 203.186,-26.1828"/>
-</g>
-<!-- computing&#45;&#45;data -->
-<g id="edge3" class="edge"><title>computing&#45;&#45;data</title>
-<path fill="none" stroke="black" d="M198.708,-15.363C186.828,-14.7976 174.072,-14.2848 162.255,-14 130.151,-13.2262 122.097,-12.9657 90,-14 78.1413,-14.3821 65.0265,-15.1744 53.9246,-15.9538"/>
-</g>
-</g>
-</svg>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[12]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Interactive Computing</span>
@@ -13107,31 +12476,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h2 id="Interactive-Computing">Interactive Computing<a class="anchor-link" href="#Interactive-Computing">&#182;</a></h2><h4 id="Fernando-Perez---The-IPython-notebook:-a-historical-retrospective-&#128077;"><a href="None">Fernando Perez</a> - <a href="http://blog.fperez.org/2012/01/ipython-notebook-historical.html">The IPython notebook: a historical retrospective &#128077;</a><a class="anchor-link" href="#Fernando-Perez---The-IPython-notebook:-a-historical-retrospective-&#128077;">&#182;</a></h4><blockquote><p>I also read an article that mentioned two good interactive systems for Python, LazyPython and IPP, not surprisingly also created by scientists.  <strong>I say this because the natural flow of scientific computing pretty much mandates a solid interactive environment</strong>, so while other Python users and developers may like having occasional access to interactive facilities, <strong>scientists more or less demand them</strong>.  I contacted their authors,  Nathan Gray and Janko Hauser, seeking to join forces to create IPython;  they were both very gracious and let me use their code, but didn't have the time to participate in the effort.  <em>As any self-respecting graduate student with a dissertation deadline looming would do, I threw myself full-time into building the first 'real' IPython by merging my code with both of theirs</em> (eventually I did graduate, by the way).</p>
-</blockquote>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[29]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>    <span class="n">computing</span><span class="o">.</span><span class="n">licklider</span>
@@ -13141,46 +12489,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-
-<pre><code>computing.licklider</code></pre>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt output_prompt">Out[29]:</div>
-
-
-
-
-<div class="output_text output_subarea output_execute_result">
-<pre>{&#39;man-computer&#39;: &#39;https://en.wikipedia.org/wiki/Man-Computer_Symbiosis&#39;,
- &#39;publications&#39;: &#39;https://en.wikipedia.org/wiki/J._C._R._Licklider#Publications&#39;,
- &#39;topics&#39;: &#39;cybernetic, ai&#39;}</pre>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[34]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="o">*</span> <span class="p">[</span><span class="n">Licklider</span><span class="p">](</span><span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">en</span><span class="o">.</span><span class="n">wikipedia</span><span class="o">.</span><span class="n">org</span><span class="o">/</span><span class="n">wiki</span><span class="o">/</span><span class="n">J</span><span class="o">.</span><span class="n">_C</span><span class="o">.</span><span class="n">_R</span><span class="o">.</span><span class="n">_Licklider</span><span class="p">)</span> <span class="o">-</span> <span class="n">cybernetic</span><span class="p">,</span> <span class="n">ai</span>
@@ -13198,40 +12510,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<ul>
-<li><a href="https://en.wikipedia.org/wiki/J._C._R._Licklider">Licklider</a> - cybernetic, ai</li>
-<li><p><a href="http://americanhistory.si.edu/comphist/englebar.htm">Englebart</a> - <a href="https://www.youtube.com/watch?v=yJDv-zdhzMY">Mother of all Demos</a></p>
-<p><img src="https://deiimages.files.wordpress.com/2016/03/first_mouse.jpg" alt=""></p>
-</li>
-<li><a href="https://medium.com/the-polymath-project/alan-kay-on-how-many-books-you-can-read-in-a-lifetime-e0f08682b13d">Alan Kay</a> - object-oriented computing, graphical UI, the personal computer</li>
-<li><a href="https://en.wikipedia.org/wiki/Tim_Berners-Lee">TBL</a> - The World Wide Web</li>
-<li><a href="https://en.wikipedia.org/wiki/Stephen_Wolfram">Stephen Wolfram</a></li>
-<li><a href="https://en.wikipedia.org/wiki/Linus_Torvalds">Linus Torvalds</a> - <a href="https://en.wikipedia.org/wiki/Git#History">git</a></li>
-<li><a href="https://wstein.org/">Willian Stein</a> <a href="http://www.sagemath.org/">SageMath</a> - <a href="https://cocalc.com/">CoCalc</a></li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[54]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">### Interactive computing is multi-objective</span>
@@ -13261,51 +12543,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h3 id="Interactive-computing-is-multi-objective">Interactive computing is multi-objective<a class="anchor-link" href="#Interactive-computing-is-multi-objective">&#182;</a></h3><p>Modern scientists must consider tools that improve their interactions with machines, not how fast the machine works.</p>
-<h4 id="Tips-for-interactive-computing">Tips for interactive computing<a class="anchor-link" href="#Tips-for-interactive-computing">&#182;</a></h4><ul>
-<li><p><a href="https://en.wikipedia.org/wiki/Cache_(computing)">Caching</a></p>
-<ul>
-<li><p>Separating production data from archival research data</p>
-
-<pre><code>  from toolz import memoize
-  from functools import lru_cache</code></pre>
-</li>
-</ul>
-</li>
-<li><p><a href="https://en.wikipedia.org/wiki/Parallel_computing">Parallelization</a></p>
-
-<pre><code>      from joblib import delayed, parallel
-      import ipyparallel</code></pre>
-</li>
-<li><p><a href="http://toolz.readthedocs.io/en/latest/heritage.html">Functional Programming</a> <em>because names are the worst</em></p>
-
-<pre><code>      from toolz import curry</code></pre>
-</li>
-<li><a href="https://en.wikipedia.org/wiki/Literate_programming">Reading over writing</a></li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[55]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="n">Ⅎill</span><span class="p">}}</span>
@@ -13324,57 +12565,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<blockquote><h2 id="...-surely-nobody-wants-to-admit-writing-an-illiterate-program.">... surely nobody wants to admit writing an illiterate program.<a class="anchor-link" href="#...-surely-nobody-wants-to-admit-writing-an-illiterate-program.">&#182;</a></h2>
-</blockquote>
-<h2 id="Donald-Knuth---Literate-Programming"><a href="https://en.wikipedia.org/wiki/Donald_Knuth">Donald Knuth</a> - <a href="http://roxygen.org/knuth-literate-programming.pdf">Literate Programming</a><a class="anchor-link" href="#Donald-Knuth---Literate-Programming">&#182;</a></h2><ul>
-<li><a href="https://en.wikipedia.org/wiki/TeX">$\TeX$</a></li>
-<li><a href="https://en.wikipedia.org/wiki/The_Art_of_Computer_Programming">The Art of Computer Programming</a></li>
-<li><a href="http://yakshav.es/the-patron-saint-of-yakshaves/">40 years of tests!</a></li>
-<li><a href="https://web.archive.org/web/20080820030403/http://www.americanscientist.org/bookshelf/pub/100-or-so-books-that-shaped-a-century-of-science">Book of the Century</a></li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[56]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">#### Jupyter permits</span>
@@ -13390,142 +12584,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h4 id="Jupyter-permits">Jupyter permits<a class="anchor-link" href="#Jupyter-permits">&#182;</a></h4>
-<pre><code>digraph {rankdir="LR"; subgraph clusterc{ label="literate computing"; data-&gt;"interactive computing" -&gt;data -&gt; "literate programming" -&gt;data} {"interactive computing" "literate programming"} -&gt; machines "literate programming" -&gt; people {machines people} -&gt; 🙉🙈🙊} 
-
-</code></pre>
-<ul>
-<li><a href="https://daringfireball.net/projects/markdown/">Markdown</a> - Order, emphasis, and hierarchy in plain-text</li>
-<li><a href="https://en.wikipedia.org/wiki/Statement_(computer_science)">Statements</a> &amp; <a href="https://en.wikipedia.org/wiki/Expression_(computer_science)">Expressions</a> <del><a href="https://en.wikipedia.org/wiki/Von_Neumann_programming_languages">Von Neumann Architecture</a></del></li>
-<li><a href="https://en.wikipedia.org/wiki/laTeX">$\LaTeX$</a></li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_svg output_subarea ">
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN"
- "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
-<!-- Generated by graphviz version 2.38.0 (20140413.2041)
- -->
-<!-- Title: %3 Pages: 1 -->
-<svg width="551pt" height="152pt"
- viewBox="0.00 0.00 551.17 152.00" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
-<g id="graph0" class="graph" transform="scale(1 1) rotate(0) translate(4 148)">
-<title>%3</title>
-<polygon fill="white" stroke="none" points="-4,4 -4,-148 547.166,-148 547.166,4 -4,4"/>
-<g id="clust1" class="cluster"><title>clusterc</title>
-<polygon fill="none" stroke="black" points="8,-8 8,-136 288.922,-136 288.922,-8 8,-8"/>
-<text text-anchor="middle" x="148.461" y="-120.8" font-family="Times,serif" font-size="14.00">literate computing</text>
-</g>
-<!-- data -->
-<g id="node1" class="node"><title>data</title>
-<ellipse fill="none" stroke="black" cx="43" cy="-61" rx="27" ry="18"/>
-<text text-anchor="middle" x="43" y="-56.8" font-family="Times,serif" font-size="14.00">data</text>
-</g>
-<!-- interactive computing -->
-<g id="node2" class="node"><title>interactive computing</title>
-<ellipse fill="none" stroke="black" cx="193.461" cy="-88" rx="87.4225" ry="18"/>
-<text text-anchor="middle" x="193.461" y="-83.8" font-family="Times,serif" font-size="14.00">interactive computing</text>
-</g>
-<!-- data&#45;&gt;interactive computing -->
-<g id="edge1" class="edge"><title>data&#45;&gt;interactive computing</title>
-<path fill="none" stroke="black" d="M70.2001,-60.4734C88.1025,-62.4422 112.537,-66.4507 134.857,-70.9265"/>
-<polygon fill="black" stroke="black" points="134.43,-74.4124 144.932,-73.0102 135.848,-67.5574 134.43,-74.4124"/>
-</g>
-<!-- literate programming -->
-<g id="node3" class="node"><title>literate programming</title>
-<ellipse fill="none" stroke="black" cx="193.461" cy="-34" rx="85.0085" ry="18"/>
-<text text-anchor="middle" x="193.461" y="-29.8" font-family="Times,serif" font-size="14.00">literate programming</text>
-</g>
-<!-- data&#45;&gt;literate programming -->
-<g id="edge3" class="edge"><title>data&#45;&gt;literate programming</title>
-<path fill="none" stroke="black" d="M66.5481,-51.8899C77.3568,-49.0275 91.0679,-45.9836 105.439,-43.1663"/>
-<polygon fill="black" stroke="black" points="106.296,-46.5659 115.465,-41.2571 104.987,-39.6895 106.296,-46.5659"/>
-</g>
-<!-- interactive computing&#45;&gt;data -->
-<g id="edge2" class="edge"><title>interactive computing&#45;&gt;data</title>
-<path fill="none" stroke="black" d="M113.827,-80.4386C100.542,-77.9587 87.446,-75.2239 76.2486,-72.5453"/>
-<polygon fill="black" stroke="black" points="77.0993,-69.1504 66.5481,-70.1101 75.3949,-75.9397 77.0993,-69.1504"/>
-</g>
-<!-- machines -->
-<g id="node4" class="node"><title>machines</title>
-<ellipse fill="none" stroke="black" cx="360.425" cy="-88" rx="43.506" ry="18"/>
-<text text-anchor="middle" x="360.425" y="-83.8" font-family="Times,serif" font-size="14.00">machines</text>
-</g>
-<!-- interactive computing&#45;&gt;machines -->
-<g id="edge5" class="edge"><title>interactive computing&#45;&gt;machines</title>
-<path fill="none" stroke="black" d="M281.291,-88C289.914,-88 298.474,-88 306.592,-88"/>
-<polygon fill="black" stroke="black" points="306.609,-91.5001 316.609,-88 306.609,-84.5001 306.609,-91.5001"/>
-</g>
-<!-- literate programming&#45;&gt;data -->
-<g id="edge4" class="edge"><title>literate programming&#45;&gt;data</title>
-<path fill="none" stroke="black" d="M145.231,-48.9258C124.192,-53.4248 99.8026,-57.7127 80.2354,-60.303"/>
-<polygon fill="black" stroke="black" points="79.703,-56.8419 70.2001,-61.5266 80.5503,-63.7905 79.703,-56.8419"/>
-</g>
-<!-- literate programming&#45;&gt;machines -->
-<g id="edge6" class="edge"><title>literate programming&#45;&gt;machines</title>
-<path fill="none" stroke="black" d="M246.681,-48.0452C260.49,-51.9991 275.332,-56.465 288.922,-61 298.807,-64.2983 309.351,-68.1519 319.193,-71.8978"/>
-<polygon fill="black" stroke="black" points="318.16,-75.2506 328.749,-75.5833 320.678,-68.7194 318.16,-75.2506"/>
-</g>
-<!-- people -->
-<g id="node5" class="node"><title>people</title>
-<ellipse fill="none" stroke="black" cx="360.425" cy="-34" rx="33.8596" ry="18"/>
-<text text-anchor="middle" x="360.425" y="-29.8" font-family="Times,serif" font-size="14.00">people</text>
-</g>
-<!-- literate programming&#45;&gt;people -->
-<g id="edge7" class="edge"><title>literate programming&#45;&gt;people</title>
-<path fill="none" stroke="black" d="M278.876,-34C291.864,-34 304.789,-34 316.36,-34"/>
-<polygon fill="black" stroke="black" points="316.569,-37.5001 326.569,-34 316.569,-30.5001 316.569,-37.5001"/>
-</g>
-<!-- 🙉🙈🙊 -->
-<g id="node6" class="node"><title>🙉🙈🙊</title>
-<ellipse fill="none" stroke="black" cx="491.547" cy="-61" rx="51.7379" ry="21.7969"/>
-<text text-anchor="middle" x="491.547" y="-61.2844" font-family="Times,serif" font-size="14.00">🙉🙈🙊</text>
-</g>
-<!-- machines&#45;&gt;🙉🙈🙊 -->
-<g id="edge8" class="edge"><title>machines&#45;&gt;🙉🙈🙊</title>
-<path fill="none" stroke="black" d="M399.468,-80.0451C410.626,-77.7118 423.064,-75.1111 435.074,-72.5998"/>
-<polygon fill="black" stroke="black" points="435.952,-75.992 445.024,-70.5192 434.519,-69.1401 435.952,-75.992"/>
-</g>
-<!-- people&#45;&gt;🙉🙈🙊 -->
-<g id="edge9" class="edge"><title>people&#45;&gt;🙉🙈🙊</title>
-<path fill="none" stroke="black" d="M392.026,-40.3986C404.871,-43.0847 420.225,-46.2952 434.945,-49.3732"/>
-<polygon fill="black" stroke="black" points="434.491,-52.8539 444.995,-51.4749 435.923,-46.0021 434.491,-52.8539"/>
-</g>
-</g>
-</svg>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[57]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## [Jupyter Rich Display System](http://jeffskinnerbox.me/notebooks/ipython&#39;s-rich-display-system.html)</span>
@@ -13543,37 +12605,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h2 id="Jupyter-Rich-Display-System"><a href="http://jeffskinnerbox.me/notebooks/ipython's-rich-display-system.html">Jupyter Rich Display System</a><a class="anchor-link" href="#Jupyter-Rich-Display-System">&#182;</a></h2>
-<pre><code>from IPython.display import (
-    Audio, GeoJSON, HTML, 
-    IFrame, Image, JSON, 
-    Javascript, Latex, Markdown, 
-    Math, SVG, VimeoVideo, 
-    YouTubeVideo, display
-)</code></pre>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[60]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## Jupyter Macros</span>
@@ -13599,68 +12634,10 @@ thisPresentation</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h2 id="Jupyter-Macros">Jupyter Macros<a class="anchor-link" href="#Jupyter-Macros">&#182;</a></h2><p>Macros are an essential features of literate programming.  The Jupyter ecosystem provides quite a few ways to enhance your Jupyter experience.</p>
-<ul>
-<li><a href="http://ipython.readthedocs.io/en/stable/interactive/magics.html">IPython magics</a></li>
-<li><p><a href="https://ipywidgets.readthedocs.io/en/latest/">Widgets</a></p>
-
-<pre><code>  from ipywidgets import interact
-  @interact
-  def f(a=(-.5, .5, .001), b=list(range(0,900,10))):
-      print(b**a)</code></pre>
-</li>
-<li><p><a href="http://jeffskinnerbox.me/notebooks/ipython&#39;s-rich-display-system.html">Rich Display System</a></p>
-</li>
-<li><a href="https://github.com/jupyterlab/jupyter-renderers">Jupyter Renderers</a></li>
-<li><a href="http://jupyterlab.readthedocs.io/en/stable/user/extensions.html">Jupyter lab extensions</a></li>
-<li><a href="https://www.dataquest.io/blog/jupyter-notebook-tips-tricks-shortcuts/">28 Jupyter Notebook tips, tricks, and shortcuts</a></li>
-<li><a href="https://carreau.gitbooks.io/jupyter-book/content/notebook-extensions.html">nbextensions</a><a href="http://localhost:8888/tree#nbextensions_configurator">✅</a></li>
-</ul>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-
-
- 
- 
-<div id="ce3e7fa3-e372-4f59-8c81-f1ae548d049f"></div>
-<div class="output_subarea output_widget_view ">
-<script type="text/javascript">
-var element = $('#ce3e7fa3-e372-4f59-8c81-f1ae548d049f');
-</script>
-<script type="application/vnd.jupyter.widget-view+json">
-{"model_id": "bf862ef5f8bb4b8abc1f2fa4168fcfc2", "version_major": 2, "version_minor": 0}
-</script>
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[20]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="n">Ⅎill</span><span class="p">}}</span>
@@ -13692,65 +12669,10 @@ var element = $('#ce3e7fa3-e372-4f59-8c81-f1ae548d049f');
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h2 id="Jupyter-Development-Environments">Jupyter Development Environments<a class="anchor-link" href="#Jupyter-Development-Environments">&#182;</a></h2><p>Jupyter provides core abstractions for other modern literate computing interfaces.</p>
-<h3 id="Browser">Browser<a class="anchor-link" href="#Browser">&#182;</a></h3><ul>
-<li><a href="https://github.com/jupyter/notebook">classic</a></li>
-<li><a href="https://github.com/jupyterlab/jupyterlab">lab</a></li>
-</ul>
-<h3 id="Desktop">Desktop<a class="anchor-link" href="#Desktop">&#182;</a></h3><p>Based on <a href="module &#39;ten.particles.github&#39; from &#39;/Users/tonyfast/_ten/ten/particles/github.ipynb&#39;">Github Electron</a></p>
-<ul>
-<li><a href="https://github.com/nteract/">NetFlix nteract</a></li>
-<li><a href="https://atom.io/packages/hydrogen">hydrogen</a></li>
-</ul>
-<h3 id="Cloud">Cloud<a class="anchor-link" href="#Cloud">&#182;</a></h3><ul>
-<li><a href="https://github.com/jupyterhub/jupyterhub">jupyterhub</a></li>
-<li><a href="https://notebooks.azure.com/">Microsoft Azure</a></li>
-<li><a href="https://cloud.google.com/datalab/">Google datalab</a></li>
-<li><a href="https://cocalc.com/">cocalc</a></li>
-</ul>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[21]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="n">Ⅎill</span><span class="p">}}</span>
@@ -13765,63 +12687,10 @@ var element = $('#ce3e7fa3-e372-4f59-8c81-f1ae548d049f');
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h1 id="Jupyter-is-for-documents">Jupyter is for documents<a class="anchor-link" href="#Jupyter-is-for-documents">&#182;</a></h1>
-<pre><code>import nbconvert
-print(nbconvert.__doc__)</code></pre>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>Utilities for converting notebooks to and from different formats.
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[22]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1"># 👁❤️`nbconvert`</span>
@@ -13840,60 +12709,10 @@ print(nbconvert.__doc__)</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h1 id="&#128065;&#10084;&#65039;nbconvert">&#128065;&#10084;&#65039;<code>nbconvert</code><a class="anchor-link" href="#&#128065;&#10084;&#65039;nbconvert">&#182;</a></h1>
-<pre><code>if __name__ == '__main__':
-    !jupyter nbconvert --to html $__file__
-    !jupyter nbconvert --to markdown $__file__
-    !jupyter nbconvert --to python $__file__
-    # !jupyter nbconvert --to slides $__file__ 
-    %rm technical.py
-
-</code></pre>
-<hr>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-<div class="output_subarea output_stream output_stdout output_text">
-<pre>[NbConvertApp] Converting notebook technical.ipynb to html
-[NbConvertApp] Writing 346232 bytes to technical.html
-[NbConvertApp] Converting notebook technical.ipynb to markdown
-[NbConvertApp] Support files will be in technical_files/
-[NbConvertApp] Making directory technical_files
-[NbConvertApp] Making directory technical_files
-[NbConvertApp] Making directory technical_files
-[NbConvertApp] Making directory technical_files
-[NbConvertApp] Writing 34487 bytes to technical.md
-[NbConvertApp] Converting notebook technical.ipynb to python
-[NbConvertApp] Writing 8611 bytes to technical.py
-</pre>
-</div>
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[23]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>    <span class="n">http</span><span class="p">:</span><span class="o">//</span><span class="n">nbviewer</span><span class="o">.</span><span class="n">jupyter</span><span class="o">.</span><span class="n">org</span><span class="o">/</span>
@@ -13903,51 +12722,10 @@ print(nbconvert.__doc__)</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-
-<pre><code>http://nbviewer.jupyter.org/</code></pre>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-
-        <iframe
-            width="800"
-            height="600"
-            src="http://nbviewer.jupyter.org/"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[24]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">blog</span><span class="o">.</span><span class="n">github</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="mi">2015</span><span class="o">-</span><span class="mi">05</span><span class="o">-</span><span class="mi">07</span><span class="o">-</span><span class="n">github</span><span class="o">-</span><span class="n">jupyter</span><span class="o">-</span><span class="n">notebooks</span><span class="o">-</span><span class="mi">3</span><span class="o">/</span>
@@ -13957,51 +12735,10 @@ print(nbconvert.__doc__)</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-
-<pre><code>https://blog.github.com/2015-05-07-github-jupyter-notebooks-3/</code></pre>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-
-        <iframe
-            width="800"
-            height="600"
-            src="https://blog.github.com/2015-05-07-github-jupyter-notebooks-3/"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[25]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span>    <span class="n">https</span><span class="p">:</span><span class="o">//</span><span class="n">getnikola</span><span class="o">.</span><span class="n">com</span><span class="o">/</span><span class="n">blog</span><span class="o">/</span>
@@ -14016,54 +12753,10 @@ print(nbconvert.__doc__)</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-
-<pre><code>https://getnikola.com/blog/
-
-</code></pre>
-<h3 id="Blogging-with-Jupyter">Blogging with Jupyter<a class="anchor-link" href="#Blogging-with-Jupyter">&#182;</a></h3><p>@damianavila</p>
-
-</div>
-
-</div>
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_html rendered_html output_subarea ">
-
-        <iframe
-            width="800"
-            height="600"
-            src="https://getnikola.com/blog/"
-            frameborder="0"
-            allowfullscreen
-        ></iframe>
-        
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[26]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="p">{{</span><span class="n">Ⅎill</span><span class="p">}}</span>
@@ -14077,54 +12770,10 @@ print(nbconvert.__doc__)</code></pre>
 </div>
 </div>
 
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<hr>
-<h1 id="Jupyter's-Technical-Value">Jupyter's Technical Value<a class="anchor-link" href="#Jupyter's-Technical-Value">&#182;</a></h1><ol>
-<li>Jupyter is data </li>
-<li>Jupyter is literate computing</li>
-<li>Jupyter is for documents</li>
-</ol>
-
-</div>
-
-</div>
-
-</div>
-</div>
-
 </div>
 <div class="cell border-box-sizing code_cell rendered">
 <div class="input">
-<div class="prompt input_prompt">In&nbsp;[27]:</div>
+<div class="prompt input_prompt">In&nbsp;[&nbsp;]:</div>
 <div class="inner_cell">
     <div class="input_area">
 <div class=" highlight hl-ipython3"><pre><span></span><span class="c1">## 🤛[The History and Community.](history.ipynb)</span>
@@ -14132,25 +12781,6 @@ print(nbconvert.__doc__)</code></pre>
 </pre></div>
 
 </div>
-</div>
-</div>
-
-<div class="output_wrapper">
-<div class="output">
-
-
-<div class="output_area">
-
-<div class="prompt"></div>
-
-
-
-<div class="output_markdown rendered_html output_subarea ">
-<h2 id="&#129307;The-History-and-Community.">&#129307;<a href="history.ipynb">The History and Community.</a><a class="anchor-link" href="#&#129307;The-History-and-Community.">&#182;</a></h2><h2 id="&#129308;Collaborative-Literate-Computing.">&#129308;<a href="collaboration.ipynb">Collaborative Literate Computing.</a><a class="anchor-link" href="#&#129308;Collaborative-Literate-Computing.">&#182;</a></h2>
-</div>
-
-</div>
-
 </div>
 </div>
 

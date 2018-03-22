@@ -221,7 +221,7 @@
 ---
 
 
-# Open Source Science has made computation accessible to everyone.
+# Open Source Software practices have made computation accessible to everyone.
 
 
 
@@ -245,18 +245,14 @@
 ---
 ---
 ---
+
+
+
+![svg](history_files/history_10_0.svg)
+
 
 
 > ...By that point [Brian Granger]() and [Min Ragan-Kelley]() had come on board and we had built the Twisted-based parallel tools. Using this, Min got a notebook prototype working using an SQL/SQLAlchemy backend.  We had the opportunity to work on many of these ideas during a workshop on Interactive Parallel Computation that William and I co-organized (along with others).  Like Sage, this prototype used a browser for the client but it tried to retain the 'IPython experience', something the Sage notebook didn't provide.
-
-
-
-    digraph {rankdir="LR"; 
-             subgraph clusterservices{label="services";ipython ->jupyter }; subgraph clusterlang{label="interpretted languages";julia r python}; subgraph clusternb{label="modern notebooks";maple mathematica  -> python; sage ->python}; julia->jupyter; r-> jupyter; python -> ipython}
-
-
-
-![svg](history_files/history_10_1.svg)
 
 
 
@@ -297,7 +293,7 @@
 
 
 
-![svg](history_files/history_12_1.svg)
+![svg](history_files/history_13_1.svg)
 
 
 
@@ -1540,7 +1536,7 @@
 
 
 
-![svg](history_files/history_26_1.svg)
+![svg](history_files/history_27_1.svg)
 
 
 

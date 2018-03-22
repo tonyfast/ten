@@ -641,6 +641,8 @@ Jupyter provides valuable components for the many facets of literate computing. 
 > ... stating the problem definition without drawing something is mere lip-service.
 > - Prof. George Polya - How to Solve It
 
+### [🚫💻s](https://www.nytimes.com/2017/11/22/business/laptops-not-during-lecture-or-meeting.html)
+
 
 
 * Jupyter is scientific software    

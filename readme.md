@@ -16,6 +16,10 @@ Within organizations, Jupyter notebooks are commonly used to exchange ideas and 
 
 
 
+# [Get Started](ten/intro.ipynb)
+
+
+
 ---
 
 # Documentation
@@ -33,23 +37,15 @@ Create the [readme.md](https://github.com/noffle/art-of-readme "Styleguide for t
         !rm -rf ten/*_files
 
 
-
-## Test
-
-This project aims to be readable, reusable, and reproducible literate documents created with Jupyter.  
-
-    def testTheModules():
-        """Import all of the modules created for ten, test for completeness."""
-        with __import__('IPython').utils.capture.capture_output() as out:
-            from ten import history, technical, collaboration, intro
-            from ten.particles import kernels, refs as xx, computing, recent
-        modules = history, technical, collaboration, recent, kernels, computing, intro
-        assert the.map(lambda x: x.__complete__ is True).all()(modules)
-        assert the.map(x.__file__).map(the.str.endswith('.ipynb')).all()(modules)
-                
-    assert not getattr(__name__ == '__main__' and unittest(testTheModules), 'errors', None) , """The tests were run and did not pass""" 
-    print("""🏆🏆🏆""")
-
-
-    🏆🏆🏆
+    [NbConvertApp] Converting notebook readme.ipynb to markdown
+    [NbConvertApp] Writing 4970 bytes to readme.md
+    [NbConvertApp] Converting notebook ten/collaboration.ipynb to markdown
+    [NbConvertApp] Executing notebook with kernel: other-env
+    [NbConvertApp] Support files will be in collaboration_files/
+    [NbConvertApp] Making directory ten/collaboration_files
+    [NbConvertApp] Making directory ten/collaboration_files
+    [NbConvertApp] Making directory ten/collaboration_files
+    [NbConvertApp] Writing 12661 bytes to ten/collaboration.md
+    [NbConvertApp] Converting notebook ten/history.ipynb to markdown
+    [NbConvertApp] Executing notebook with kernel: other-env
 

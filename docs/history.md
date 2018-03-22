@@ -108,7 +108,7 @@
 
 # The Modern Scientist ...
 
-... interacts with scientific discovery on computers, they seek measurements _in silico_, not on paper.  They rely on community vetted resources as tools for discovery, and their science is not computer science.  They write code for people and machines.
+... interacts with scientific discovery on computers, they seek measurements _in silico_, not on paper.  They rely on community vetted resources as tools for discovery, and their science is not computer science.  They will write code for people and machines.
 
 
 
@@ -197,8 +197,6 @@
 
 [![](https://ars.els-cdn.com/content/image/1-s2.0-S0927025607003369-gr4.jpg)](https://www.sciencedirect.com/science/article/pii/S0927025607003369)
 
-> This image took 3 weeks to make.
-
 
 
 ---
@@ -254,7 +252,7 @@
 
 
     digraph {rankdir="LR"; 
-             subgraph clusterservices{label="services";ipython ->jupyter }; subgraph clusterlang{label="interpretted languages";julia r python}; subgraph clusternb{label="modern notebooks";maple mathematica  -> python; sage ->python->jupyter}; julia->jupyter; r-> jupyter; python -> ipython}
+             subgraph clusterservices{label="services";ipython ->jupyter }; subgraph clusterlang{label="interpretted languages";julia r python}; subgraph clusternb{label="modern notebooks";maple mathematica  -> python; sage ->python}; julia->jupyter; r-> jupyter; python -> ipython}
 
 
 
@@ -268,8 +266,6 @@
 * Parallelizable
 
 <code><pre>  * Literate</pre></code>
-
-# ... and good for science
 
 
 
@@ -379,16 +375,22 @@
 
 
 
-# APIs as creole
+# APIs as creole [`sklearn`](http://scikit-learn.org/stable/)
 
-    from sklearn.base import TransformerMixin, ClassifierMixin, RegressorMixin
+    from sklearn                                   .base import TransformerMixin, ClassifierMixin, RegressorMixin
     print(a.map(a.attrgetter('__doc__'))["\n".join]((TransformerMixin, ClassifierMixin, RegressorMixin)))
-    print(TransformerMixin.fit_transform.__doc__)
+    
 
 
     Mixin class for all transformers in scikit-learn.
     Mixin class for all classifiers in scikit-learn.
     Mixin class for all regression estimators in scikit-learn.
+
+
+
+    print(TransformerMixin.fit_transform.__doc__)
+
+
     Fit to data, then transform it.
     
             Fits transformer to X and y with optional parameters fit_params
@@ -1538,7 +1540,7 @@
 
 
 
-![svg](history_files/history_25_1.svg)
+![svg](history_files/history_26_1.svg)
 
 
 
@@ -1593,12 +1595,26 @@
 
 
 
+    https://www.scipy.org/about.html
+
 # Numpy, Scipy, and Anaconda
 
 ### [Fernando Perez](None) - [The IPython notebook: a historical retrospective 👍](http://blog.fperez.org/2012/01/ipython-notebook-historical.html)    
 
 > ...I then wrote a python startup file to provide these features and some other niceties such as loading [<big>Numeric</big>](https://en.wikipedia.org/wiki/NumPy "compute") and [Gnuplot](# "visualization"), giving me a 'mini-mathematica' in Python (femto- might be a better description, in fairness).  Thus was my 'ipython-0.0.1' born, a mere 259 lines to be loaded as $PYTHONSTARTUP. 
     
+
+
+
+
+        <iframe
+            width="800"
+            height="600"
+            src="https://www.scipy.org/about.html"
+            frameborder="0"
+            allowfullscreen
+        ></iframe>
+        
 
 
 

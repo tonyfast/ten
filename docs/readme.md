@@ -38,7 +38,7 @@ Create the [readme.md](https://github.com/noffle/art-of-readme "Styleguide for t
 
 
     [NbConvertApp] Converting notebook readme.ipynb to markdown
-    [NbConvertApp] Writing 5079 bytes to readme.md
+    [NbConvertApp] Writing 5019 bytes to readme.md
     [NbConvertApp] Converting notebook ten/collaboration.ipynb to markdown
     [NbConvertApp] Executing notebook with kernel: other-env
     [NbConvertApp] Support files will be in collaboration_files/
@@ -57,7 +57,7 @@ Create the [readme.md](https://github.com/noffle/art-of-readme "Styleguide for t
     [NbConvertApp] Executing notebook with kernel: other-env
     [NbConvertApp] Support files will be in index_files/
     [NbConvertApp] Making directory ten/index_files
-    [NbConvertApp] Writing 8618 bytes to ten/index.md
+    [NbConvertApp] Writing 8667 bytes to ten/index.md
     [NbConvertApp] Converting notebook ten/technical.ipynb to markdown
     [NbConvertApp] Executing notebook with kernel: other-env
     [NbConvertApp] Support files will be in technical_files/
@@ -65,7 +65,7 @@ Create the [readme.md](https://github.com/noffle/art-of-readme "Styleguide for t
     [NbConvertApp] Making directory ten/technical_files
     [NbConvertApp] Making directory ten/technical_files
     [NbConvertApp] Making directory ten/technical_files
-    [NbConvertApp] Writing 25244 bytes to ten/technical.md
+    [NbConvertApp] Writing 25133 bytes to ten/technical.md
 
 
 

@@ -95,8 +95,6 @@
 
 ---
 
-## [materials informatics course](http://materials-informatics-lab.github.io/)
-
 ## [pymks](https://github.com/materialsinnovation/pymks)
 
 * [GT turned it in a  📺 show.](https://www.coursera.org/learn/material-informatics/lecture/yPdqs/introduction-to-pymks-materials-knowledge-systems-in-python)
@@ -106,6 +104,8 @@
 * [JupyterHub](https://matin.gatech.edu:9012/hub)
 
         people.tonyfast
+    
+## [materials informatics course](http://materials-informatics-lab.github.io/)
 
 
 

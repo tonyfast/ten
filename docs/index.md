@@ -344,6 +344,10 @@
 [![Binder](https://mybinder.org/badge.svg)](https://mybinder.org/v2/gh/tonyfast/ten/master?filepath=readme.ipynb)
 [![Gitter](https://badges.gitter.im/tonyfast/ten.png)](https://gitter.im/tonyfast-ten)
 
+---
+
+# made with ![](https://avatars0.githubusercontent.com/u/22800682?s=50&v=4)
+
 
 
     https://leanpub.com/modernscientist
@@ -483,8 +487,6 @@ Data science has transformed the lives of modern scientists.
 
 
     digraph {rankdir="LR";label="2015"; "Ipython v3" -> {"IPython v4" "Jupyter v4"}}
-
-> If you don't know, now ya do.
 
 
 

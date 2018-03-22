@@ -25,7 +25,7 @@ Create the [readme.md](https://github.com/noffle/art-of-readme "Styleguide for t
     if __name__ == '__main__':
         !jupyter nbconvert --MarkdownExporter.exclude_input=True --to markdown readme.ipynb
         !cp readme.md docs
-        !jupyter nbconvert --MarkdownExporter.exclude_input=True --EmbedImagesPreprocessor.embed_images=True --to markdown ten/*.ipynb
+        !source activate p6 && jupyter nbconvert --MarkdownExporter.exclude_input=True --execute --to markdown ten/*.ipynb
         !mv ten/*.md docs
         !mv ten/technical_files/*.svg docs/technical_files
         !mv ten/history_files/*.svg docs/history_files

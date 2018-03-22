@@ -421,6 +421,10 @@
 
 
 
+[![](https://image.slidesharecdn.com/xheoqqbxtmamye2b89mg-signature-731889c72db69bc48f85977bf7789e6df9364d72c925f394d7a8c3bf8ee66c88-poli-160813102507/95/jupyterhub-a-thing-explainer-overview-7-638.jpg?cb=1471084843)](https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview)
+
+
+
     http://jupyterhub.readthedocs.io/en/latest/
 
 
@@ -450,10 +454,6 @@
             allowfullscreen
         ></iframe>
         
-
-
-
-[![](https://image.slidesharecdn.com/xheoqqbxtmamye2b89mg-signature-731889c72db69bc48f85977bf7789e6df9364d72c925f394d7a8c3bf8ee66c88-poli-160813102507/95/jupyterhub-a-thing-explainer-overview-7-638.jpg?cb=1471084843)](https://www.slideshare.net/willingc/jupyterhub-a-thing-explainer-overview)
 
 
 
@@ -497,13 +497,21 @@
 
 #  Jupyter is reusable
 
-    digraph {rankdir="LR"; readable -> reusable -> reproducible -> readable}
-    
 Jupyter provides valuable components for the many facets of literate computing.  Modern scientists must focus on narrative over tools.  Below are some style guides to consider while consuming, creating, and sharing literate documents.
 
+---
 
+# <big>R</big>eadability 🤓
 
-![svg](collaboration_files/collaboration_29_1.svg)
+All Machines
+
+# <big>R</big>eusability 👩‍💻      👨‍💻
+
+A Few Machines
+
+# <big>R</big>eproducibility [👩‍🚀](https://github.com/chrislgarry/Apollo-11)[👨‍🚀](http://vimeo.com/28199826)
+
+Many Machines
 
 
 

@@ -37,6 +37,38 @@ Create the [readme.md](https://github.com/noffle/art-of-readme "Styleguide for t
         !rm -rf ten/*_files
 
 
+    [NbConvertApp] Converting notebook readme.ipynb to markdown
+    [NbConvertApp] Writing 1755 bytes to readme.md
+    [NbConvertApp] Converting notebook ten/collaboration.ipynb to markdown
+    [NbConvertApp] Executing notebook with kernel: other-env
+    [NbConvertApp] Support files will be in collaboration_files/
+    [NbConvertApp] Making directory ten/collaboration_files
+    [NbConvertApp] Making directory ten/collaboration_files
+    [NbConvertApp] Making directory ten/collaboration_files
+    [NbConvertApp] Writing 12661 bytes to ten/collaboration.md
+    [NbConvertApp] Converting notebook ten/history.ipynb to markdown
+    [NbConvertApp] Executing notebook with kernel: other-env
+    [NbConvertApp] Support files will be in history_files/
+    [NbConvertApp] Making directory ten/history_files
+    [NbConvertApp] Making directory ten/history_files
+    [NbConvertApp] Making directory ten/history_files
+    [NbConvertApp] Making directory ten/history_files
+    [NbConvertApp] Writing 34073 bytes to ten/history.md
+    [NbConvertApp] Converting notebook ten/index.ipynb to markdown
+    [NbConvertApp] Executing notebook with kernel: other-env
+    [NbConvertApp] Support files will be in index_files/
+    [NbConvertApp] Making directory ten/index_files
+    [NbConvertApp] Writing 8618 bytes to ten/index.md
+    [NbConvertApp] Converting notebook ten/technical.ipynb to markdown
+    [NbConvertApp] Executing notebook with kernel: other-env
+    [NbConvertApp] Support files will be in technical_files/
+    [NbConvertApp] Making directory ten/technical_files
+    [NbConvertApp] Making directory ten/technical_files
+    [NbConvertApp] Making directory ten/technical_files
+    [NbConvertApp] Making directory ten/technical_files
+    [NbConvertApp] Writing 25245 bytes to ten/technical.md
+
+
 
 ## Test
 
